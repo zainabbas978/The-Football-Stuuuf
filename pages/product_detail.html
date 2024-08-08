@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Product Details | Confy Chair</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    .product-img {
+      max-width: 100%;
+      height: 400px; /* Reduced height */
+      object-fit: cover;
+    }
+    .quantity-control {
+      display: inline-flex;
+      align-items: center;
+    }
+    .quantity-control button {
+      padding: 0 10px;
+      font-size: 18px;
+    }
+    .quantity-control input {
+      width: 50px;
+      text-align: center;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+    .review-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+    .review-item:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn btn-warning text-white" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Register Now</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Details Section -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Product Image -->
+      <div class="col-lg-6">
+        <img src="../images/prod1.jpg" class="product-img" alt="Product Image">
+      </div>
+
+      <!-- Product Details -->
+      <div class="col-lg-6">
+        <h2 class="mb-4">Confy Chair</h2>
+        <p class="text-muted">This new stylish and comfortable chair is perfect for any room.</p>
+        <h4 class="text-success">PKR 4000</h4>
+        
+        <!-- Ratings and Reviews -->
+        <div class="mb-4">
+          <span class="text-warning">
+            &#9733; &#9733; &#9733; &#9733; &#9734;
+          </span>
+          <span class="ms-2">4.0 (250 reviews)</span>
+          
+          <!-- Reviews Section -->
+          <div class="mt-3">
+            <div class="review-item">
+              <strong>John Doe</strong> <span class="text-muted">- "Very comfortable and stylish!"</span>
+            </div>
+            <div class="review-item">
+              <strong>Jane Smith</strong> <span class="text-muted">- "Good value for money."</span>
+            </div>
+            <div class="review-item">
+              <strong>Michael Johnson</strong> <span class="text-muted">- "Fast delivery and great quality!"</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Delivery Charges -->
+        <p><strong>Delivery Charges:</strong> PKR 200</p>
+
+        <!-- Quantity Control -->
+        <div class="mb-4">
+          <label for="quantity" class="form-label"><strong>Quantity:</strong></label>
+          <div class="quantity-control">
+            <button class="btn btn-outline-secondary" id="decrease">-</button>
+            <input type="text" id="quantity" value="1" readonly>
+            <button class="btn btn-outline-secondary" id="increase">+</button>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="mb-4">
+          <button class="btn btn-warning text-white me-3"><a href="buynow.html" style="text-decoration: none; color: white;">Buy Now</a></button>
+          <button class="btn btn-outline-warning"><a href="addtocart.html" style="text-decoration: none; color: black;">Add to Cart</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Related Products Section -->
+  <div class="container mt-5">
+    <h3 class="mb-4">Related Products</h3>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="card" style="width: 100%;">
+          <img src="../images/prod2.jpg" class="card-img-top" alt="Related Product 1" height="280px">
+          <div class="card-body">
+            <h5 class="card-title">Office Chair</h5>
+            <p class="card-text">Comfortable office chair for daily use.</p>
+            <p><b>PKR 4500</b></p>
+            <a href="#" class="btn btn-outline-warning">Buy now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 100%;">
+          <img src="../images/prod3.jpg" class="card-img-top" alt="Related Product 2" height="280px">
+          <div class="card-body">
+            <h5 class="card-title">Lounge Chair</h5>
+            <p class="card-text">Perfect for relaxing in style.</p>
+            <p><b>PKR 6000</b></p>
+            <a href="#" class="btn btn-outline-warning">Buy now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 100%;">
+          <img src="../images/prod4.jpg" class="card-img-top" alt="Related Product 3" height="280px">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Chair</h5>
+            <p class="card-text">Ergonomic design for long hours of gaming.</p>
+            <p><b>PKR 8500</b></p>
+            <a href="#" class="btn btn-outline-warning">Buy now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="card" style="width: 100%;">
+          <img src="../images/prod1.jpg" class="card-img-top" alt="Related Product 4" height="280px">
+          <div class="card-body">
+            <h5 class="card-title">Recliner Chair</h5>
+            <p class="card-text">Ultimate comfort with reclining feature.</p>
+            <p><b>PKR 10000</b></p>
+            <a href="#" class="btn btn-outline-warning">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-AY7ka4wrN5WYB2KtVvOBkf0VGfSFFTYp1p6dwbBq3z8CBTl+RBhCU9wWcXbj4Yen" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhG81r6LgYIM8k6M7KL3wEVvoEGb8Z7e1Fq/j0ibZh0O8zheGFkW/exbKQ3f" crossorigin="anonymous"></script>
+
+
+  <!-- Quantity Control Script -->
+  <script>
+    document.getElementById('increase').addEventListener('click', function () {
+      let quantity = document.getElementById('quantity');
+      quantity.value = parseInt(quantity.value) + 1;
+    });
+
+    document.getElementById('decrease').addEventListener('click', function () {
+      let quantity = document.getElementById('quantity');
+      if (parseInt(quantity.value) > 1) {
+        quantity.value = parseInt(quantity.value) - 1;
+      }
+    });
+  </script>
+</body>
+</html>

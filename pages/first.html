@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <h2>Navbar</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Blog</a></li>
+        </ul>
+        <button class="btn">Contact Us</button>
+    </div>
+
+    <div class="container">
+        <h2>Table Calculator</h2>
+        <input type="number" id="number" placeholder="Enter Number to Print Table">
+        <button id="print">Print</button>
+    </div>
+    <script>
+      const input = document.getElementById('number');
+      const printbtn = document.getElementById('print');
+      
+    //   printbtn.addEventListener('click',()=>{
+    //  let age = input.value;
+    //     if(age >= 18){
+    //         console.log("you are eligible");
+    //     }
+    //     else{
+    //         console.log("you are not eligible");
+    //     }
+    //   })
+         //const printBtn = document.getElementById("print");
+        
+        // printBtn.addEventListener('click', ()=>{
+        //     const num = document.getElementById('number');
+        //     const tableNumber = num.value;
+
+        //         let i = 1;
+        //         let result = 0;
+        //     for(i =1; i <=10; i++){
+        //         result = tableNumber * i;
+        //         console.log(result);
+        //     }
+        // })
+       
+    //    let num = 2;
+
+    //     if(num  > 20){
+    //         console.log("number is greater");
+    //     }else if(num > 5){
+    //         console.log("number is greater then 5");
+    //     }else{
+    //         console.log("number is not greater");
+    //     }
+            // index = 0 1 2 3 4
+    const cars = [3,2,1,5, 6,8]; //sort
+    // cars[1] = "Honda";
+
+    console.log(cars);
+        for(let i=0; i<cars.length; i++){
+            let temp = 0;
+ 
+            // cars[0] > cars[1]
+           if(cars[i] > cars[i+1]){
+                temp = cars[i];
+                cars[i] = cars[i+1];
+                cars[i+1] = temp;
+           }
+        }
+        console.log(cars);
+
+
+
+    </script>
+</body>
+</html>
